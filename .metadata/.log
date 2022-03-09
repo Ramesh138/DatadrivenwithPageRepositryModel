@@ -1,0 +1,26 @@
+!SESSION 2016-10-24 12:11:16.068 -----------------------------------------------
+eclipse.buildId=4.5.0.I20140806-2000
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product -data D:\Public\Selenium_Page_Object_Model\POM\POM -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-24 12:11:22.700
+!MESSAGE System property http.proxyHost is not set but should be 10.244.3.249.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-24 12:11:22.700
+!MESSAGE System property http.proxyPort is not set but should be 3128.
+!SESSION 2016-10-24 12:20:32.839 -----------------------------------------------
+eclipse.buildId=4.5.0.I20140806-2000
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-24 12:21:08.004
+!MESSAGE System property http.proxyHost is not set but should be 10.244.3.249.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-24 12:21:08.082
+!MESSAGE System property http.proxyPort is not set but should be 3128.
