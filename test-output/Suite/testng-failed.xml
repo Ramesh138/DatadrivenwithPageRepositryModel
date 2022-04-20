@@ -4,10 +4,10 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)" verbose="5">
     <classes>
-      <class name="testcases.TC001_Login">
+      <class name="testcases.TC001">
         <methods>
+          <include name="loginOpentaps"/>
           <include name="setValues"/>
-          <include name="loginOpentaps" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
@@ -15,7 +15,7 @@
           <include name="afterTest"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- testcases.TC001_Login -->
+      </class> <!-- testcases.TC001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

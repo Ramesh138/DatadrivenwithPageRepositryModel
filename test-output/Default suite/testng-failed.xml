@@ -3,17 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="keyword.RunKeywordScripts">
+      <class name="testcases.TC001">
         <methods>
+          <include name="loginOpentaps"/>
+          <include name="setValues"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="runScripts"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
           <include name="afterTest"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- keyword.RunKeywordScripts -->
+      </class> <!-- testcases.TC001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

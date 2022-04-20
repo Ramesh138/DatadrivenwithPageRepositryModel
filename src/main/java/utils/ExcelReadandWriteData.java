@@ -5,63 +5,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DataInputProvider{
+public class ExcelReadandWriteData {
 
-	public static String[][] getSheet(String dataSheetName) {
-
-		String[][] data = null;
-
-		try {
-			FileInputStream fis = new FileInputStream(new File("./data/TestData.xlsx"));
-			XSSFWorkbook workbook = new XSSFWorkbook(fis);
-			XSSFSheet sheet = workbook.getSheet(dataSheetName);	
-
-			// get the number of rows
-			int rowCount = sheet.getLastRowNum();
-
-			// get the number of columns
-			int columnCount = sheet.getRow(0).getLastCellNum();
-			data = new String[rowCount][columnCount];
-
-
-			// loop through the rows
-			for(int i=1; i <rowCount+1; i++){
-				try {
-					XSSFRow row = sheet.getRow(i);
-					for(int j=0; j <columnCount; j++){ // loop through the columns
-						try {
-							String cellValue = "";
-							try{
-								cellValue = row.getCell(j).getStringCellValue();
-								 System.out.println(cellValue);
-							}catch(NullPointerException e){
-
-							}
-
-							data[i-1][j]  = cellValue; // add to the data array
-						} catch (Exception e) {
- 							e.printStackTrace();
-						}				
-					}
-
-				} catch (Exception e) {
- 					e.printStackTrace();
-				}
-			}
-			fis.close();
-			workbook.close();
-		} catch (Exception e) {
- 			e.printStackTrace();
-		}
-		return data;
-	
-	}
-	
 	public static void main(String[] args) throws IOException, InvalidFormatException {
 
 		//File file = new File("C:\\Users\\z011615\\eclipse-workspace\\herokupp\\Processing.xlsx");
@@ -95,6 +46,5 @@ public class DataInputProvider{
 		}
 
 	}
-
 
 }
